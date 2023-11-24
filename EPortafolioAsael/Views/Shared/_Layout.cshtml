@@ -25,7 +25,11 @@
                     @if (User.Identity.IsAuthenticated)
                     {
                         @* Opciones de menu administrativo *@
-                        <li>@Html.ActionLink("Opcion administrativa", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Calendario", "Index", "Calendar", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Proyectos", "Index", "Proyectos", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Curriculum", "Index", "Curriculm", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Acerca", "Index", "Acerca", new { area = "" }, new { @class = "nav-link" })</li>
+                        <li>@Html.ActionLink("Contacto", "Index", "Contacto", new { area = "" }, new { @class = "nav-link" })</li>
                     }
 
                 </ul>
